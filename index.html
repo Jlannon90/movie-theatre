@@ -3,6 +3,7 @@
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Atomic+Age|Tangerine" rel="stylesheet">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
     <meta charset="utf-8">
@@ -10,84 +11,147 @@
   </head>
   <body>
     <div class="heading">
-      <h1></h1>
+      <h1 id="theatre">Full Price Theatre</h1>
     </div>
     <div class="container">
-      <form id="new-ticket" action="index.html" method="post">
-        <h1>Movies</h1>
-        <div class="radio">
-          <label>
-            <input type="radio" name="movie" value="Home Alone 6.1: Left in Space">
-            Home Alone 6.1: Left in Space
-          </label>
+      <div class="row">
+        <form id="new-ticket" action="index.html" method="post">
+          <div class="col-md-6 column1">
+            <h1>Movies</h1>
+            <div class="radio">
+              <label>
+                <input type="radio" name="movie" value="Home Alone 6.1: Left in Space">
+                <div class="movieTitle">
+                  Home Alone 6.1: Left in Space
+                </div>
+                </br>
+                <div class="alone">
+                  <img src="img/homealone.png" alt="Kevin's not here" />
+                </div>
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="movie" value="Really Fast Cars">
+                <div class="movieTitle">
+                  Really Fast Cars
+                </div>
+                </br>
+                <img class="borders" src="img/cars.jpg" alt="Vin Diesel on a bike" />
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="movie" value="Raiders of the Lost Gondola">
+                <div class="movieTitle">
+                  Raiders of the Lost Gondola
+                </div>
+                </br>
+                <img class="borders" src="img/gondola.jpg" alt="Gondola" />
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="movie" value="The Termite Adventure: A Coming of Age Story" required>
+                <div class="movieTitle">
+                  The Termite Adventure: A Coming of Age Story
+                </div>
+                </br>
+                <div class="termite">
+                 <img src="img/termite.jpg" alt="happy and hungry termite" />
+                </div>
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="movie" value="Gasp!">
+                <div class="movieTitle">
+                  Gasp!
+                </div>
+                </br>
+                <img class="borders" src="img/scream.jpg" alt="Darryl screaming" />
+              </label>
+            </div>
+          </div>
+          <div class="col-md-6 column2">
+            <h1>Times</h1>
+            <div class="radio">
+              <label>
+                <input type="radio" name="time" value="1:15 PM" required>
+                1:15 PM
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="time" value="2:30 PM">
+                2:30 PM
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="time" value="3:00 PM">
+                3:00 PM
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="time" value="5:00 PM">
+                5:00 PM
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="time" value="8:00 PM">
+                8:00 PM
+              </label>
+            </div>
+            <h1>Concessions</h1>
+            <div class="radio">
+              <label>
+                <input type="radio" name="concessions" value="Corn">
+                Corn
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="concessions" value="Cobb">
+                Corn on the cobb
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="concessions" value="baby">
+                Baby corn that grew up
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="concessions" value="ear">
+                Ear of corn
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="concessions" value="candy" required>
+                Candy... jk, still just corn.
+              </label>
+            </div>
+            <div class="corndog">
+              <img id="corndog" src="img/corn.gif" alt="corndog"/>
+              <h3> Corndog </h3>
+            </div>
+            <div class="form-group">
+              <label for="age">Please enter your age</label>
+              <input id="age" type="number" name="age" value="" required>
+            </div>
+            <button type="submit" name="button" class="btn">Add Ticket</button>
+          </form>
+          <div id="ticket-output">
+            <h1>Tickets</h1>
+            <ul id="tickets">
+            </ul>
+          </div>
         </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="movie" value="Really Fast Cars">
-            Really Fast Cars
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="movie" value="Raiders of the Lost Gondola">
-            Raiders of the Lost Gondola
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="movie" value="The Termite Adventure: A Coming of Age Story">
-            The Termite Adventure: A Coming of Age Story
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="movie" value="Gasp!">
-            Gasp!
-          </label>
-        </div>
-
-        <h1>times</h1>
-        <div class="radio">
-          <label>
-            <input type="radio" name="time" value="1:15 PM">
-            1:15 PM
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="time" value="2:30 PM">
-            2:30 PM
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="time" value="3:00 PM">
-            3:00 PM
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="time" value="5:00 PM">
-            5:00 PM
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="time" value="8:00 PM">
-            8:00 PM
-          </label>
-        </div>
-        <div class="form-group">
-          <label for="age">Please enter your age</label>
-          <input id="age" type="number" name="age" value="" required>
-        </div>
-        <button type="submit" name="button" class="btn">Add Ticket</button>
-      </form>
-      <div id="ticket-output">
-        <h1></h1>
-        <ul id="tickets">
-
-        </ul>
       </div>
     </div>
   </body>

@@ -1,0 +1,88 @@
+img {
+  max-width: 450px;
+  max-height: auto;
+}
+
+.borders {
+  border-style: solid;
+  border-color: #b4251c;
+  border-width: medium;
+  border-radius: 7px;
+}
+
+.termite {
+  background-image: url(https://cdn.pixabay.com/photo/2015/12/12/22/27/flower-meadow-1090255_960_720.jpg);
+  border-style: solid;
+  border-color: #b4251c;
+  border-width: medium;
+  border-radius: 7px;
+}
+.corndog {
+  display: none;
+  font-family: 'Tangerine', cursive;
+  border-radius: 25px;
+}
+
+#corndog {
+  border-radius: 50px;
+  border-style: solid;
+  border-color: #b4251c;
+  border-width: medium;
+}
+
+.alone {
+  background-image: url(http://horrornews.net/wp-content/uploads/2013/09/Gravity_alone_in_space-450x253.jpg);
+  background-repeat: no-repeat;
+  border-style: solid;
+  border-color: #b4251c;
+  border-width: medium;
+  border-radius: 7px;
+}
+
+body {
+  text-align: center;
+  background-image: url(https://s-media-cache-ak0.pinimg.com/originals/89/37/e4/8937e40c072a910b7e130ad5ac80ee5b.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #d8c565;
+}
+
+#theatre {
+  font-family: 'Tangerine', cursive;
+  font-size: 120px;
+  margin-top: 375px;
+}
+
+.column1 {
+}
+
+h1 {
+  font-family: 'Tangerine', cursive;
+  font-size: 4em;
+}
+
+.column2 {
+  border-style: solid;
+  border-color: #b4251c;
+  border-width: medium;
+  background-color: #fffcf4;
+  border-radius: 7px;
+
+}
+
+.movieTitle {
+  font-family: 'Atomic Age', cursive;
+  margin-top: 17px;
+  font-size: 25px;
+}
+ .radio {
+   margin-bottom: 25px;
+ }
+
+#tickets {
+  list-style: none;
+}
+
+.ticket {
+
+}

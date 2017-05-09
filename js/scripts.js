@@ -13,7 +13,7 @@ function Ticket(movie, time, age) {
 }
 
 Ticket.prototype.generateTicket = function() {
-  return this.movieTicket + " " + this.ticketTime;
+  return this.movieTicket + " at " + this.ticketTime;
 }
 
 
@@ -46,7 +46,8 @@ $(document).ready(function() {
 
     var newTicket = new Ticket(movieChoice, timeChoice, customerAge);
 
-    $("ul#tickets").append("<li>" + newTicket.generateTicket() + " $" + newTicket.ticketOutput() + "</li>");
+    $("ul#tickets").append("<li><h3 style='font-weight:500;'>" + newTicket.generateTicket() + "</br>" + " $" + newTicket.ticketOutput() + "</h3></li>");
+    $(".corndog").show();
 });
 
 
