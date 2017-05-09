@@ -13,56 +13,70 @@
       <h1>Movies</h1>
       <div class="radio">
         <label>
-          <input type="radio" name="movie" value="Home Along 6.1: Left in Space">
+          <input type="radio" name="movie" value="Home Alone 6.1: Left in Space">
+          Home Alone 6.1: Left in Space
         </label>
       </div>
       <div class="radio">
         <label>
           <input type="radio" name="movie" value="Really Fast Cars">
+          Really Fast Cars
         </label>
       </div>
       <div class="radio">
         <label>
           <input type="radio" name="movie" value="Raiders of the Lost Gondola">
+          Raiders of the Lost Gondola
         </label>
       </div>
       <div class="radio">
         <label>
           <input type="radio" name="movie" value="The Termite Adventure: A Coming of Age Story">
+          The Termite Adventure: A Coming of Age Story
         </label>
       </div>
       <h1>times</h1>
       <div class="radio">
         <label>
-          <input type="radio" name="time" value="1">
+          <input type="radio" name="time" value="1:15 PM">
+          1:15 PM
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="time" value="2">
+          <input type="radio" name="time" value="2:30 PM">
+          2:30 PM
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="time" value="3">
+          <input type="radio" name="time" value="3:00 PM">
+          3:00 PM
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="time" value="4">
+          <input type="radio" name="time" value="5:00 PM">
+          5:00 PM
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="time" value="5">
+          <input type="radio" name="time" value="8:00 PM">
+          8:00 PM
         </label>
       </div>
       <div class="form-group">
         <label for="age">Please enter your age</label>
-        <input type="numbers" name="name" value="">
+        <input id="age" type="number" name="age" value="" required>
       </div>
-      <button type="button" name="button"></button>
+      <button type="submit" name="button" class="btn">Buy Ticket</button>
     </form>
+    <div id="ticket-output">
+      <h1></h1>
+      <ul id="tickets">
 
+      </ul>
+    </div>
   </body>
 </html>
